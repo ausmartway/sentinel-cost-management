@@ -16,7 +16,7 @@ module "tfrun-functions" {
 }
 
 module "aws_functions" {
-    source = "https://github.com/ausmartway/terraform-sentinel-policies/blob/main/aws/aws-functions/aws-functions.sentinel"
+    source = "https://raw.githubusercontent.com/ausmartway/terraform-sentinel-policies/main/aws/aws-functions/aws-functions.sentinel"
 }
         
 policy "limit-cost-and-percentage-increase" {
