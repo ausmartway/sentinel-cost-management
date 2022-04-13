@@ -14,3 +14,8 @@ module "tfconfig-functions" {
 module "tfrun-functions" {
     source = "https://raw.githubusercontent.com/ausmartway/terraform-sentinel-policies/main/common-functions/tfrun-functions/tfrun-functions.sentinel"
 }
+
+policy "limit-cost-and-percentage-increase" {
+    source = "./limit-cost-and-percentage-increase.sentinel"
+    enforcement_level = "soft-mandatory"
+}
