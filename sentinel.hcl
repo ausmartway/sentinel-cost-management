@@ -15,7 +15,7 @@ module "tfrun-functions" {
     source = "https://raw.githubusercontent.com/ausmartway/terraform-sentinel-policies/main/common-functions/tfrun-functions/tfrun-functions.sentinel"
 }
 
-module "aws_functions" {
+module "aws-functions" {
     source = "https://raw.githubusercontent.com/ausmartway/terraform-sentinel-policies/main/aws/aws-functions/aws-functions.sentinel"
 }
         
